@@ -1,0 +1,6 @@
+<?php
+// Récupère le contenu du fichier index.php puis l'affiche en encodage base64
+$f = file_get_contents('index.php');
+$fdata = base64_encode($f);  
+echo $fdata;
+?>
